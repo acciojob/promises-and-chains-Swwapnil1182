@@ -15,7 +15,7 @@ function onSubmit(){
 
     setTimeout(()=>{
             if(age>18){
-                resolve(`Welcome,${name1}. You can vote.`);
+                resolve(`Welcome, ${name1}. You can vote.`);
             }
             else{
                 reject(`Oh sorry ${name1}. You aren\'t old enough.`);
