@@ -18,7 +18,7 @@ function onSubmit(){
                 resolve(alert('Welcome, ${name1}. You can vote.'));
             }
             else{
-                reject(alert('Oh sorry ${name1}. You aren\t't old enough.'));
+                reject(alert('Oh sorry ${name1}. You arent old enough.'));
             }
     },4000)
 })
