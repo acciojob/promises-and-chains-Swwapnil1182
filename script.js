@@ -6,7 +6,7 @@ function onSubmit(){
     let age=document.getElementById("age").value.trim();
     let name1=document.getElementById("name").value.trim();
     if(age==="" || name1===""){
-        alert("Please enter valid details.")
+        alert("Please enter valid details")
         return false
     }   
 
@@ -15,10 +15,10 @@ function onSubmit(){
 
     setTimeout(()=>{
             if(age>18){
-                resolve(alert('Welcome, . You can vote.'));
+                resolve(alert('Welcome,${name1}. You can vote.'));
             }
             else{
-                reject(alert("Oh sorry . You aren't old enough."));
+                reject(alert("Oh sorry ${name1}. You aren't old enough."));
             }
     },4000)
 })
